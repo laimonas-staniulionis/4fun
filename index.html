@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/style/style.css">
         <title>BAMBALAM.LT</title>
+        <script src="http://mattstow.com/js/ios-orientationchange-fix.min.js"></script>
     </head>
     <body>
         <div class="landscape">
-            <img src="/resources/landscape.jpg" class="land-img" alt="background" usemap="#land-map">
+            <img src="/resources/landscape.jpg" width="1920" height="1080" class="land-img" alt="background" usemap="#land-map">
             <map name="land-map">
-                
+                    <area target="" alt="" title="" href="https://www.facebook.com/BAMBALAMdotLT/" coords="1655,154,100" shape="circle">
+                    <area target="" alt="" title="" href="https://soundcloud.com/bambalamdotlt" coords="1657,398,100" shape="circle">
+                    <area target="" alt="" title="" href="https://www.youtube.com/channel/UCaN1Fm77TpWEJ0GuCEz1yCw?view_as=subscriber" coords="1660,671,100" shape="circle">
+                    <area target="" alt="" title="" href="mailto:laimonas.staniulionis@gmail.com" coords="1657,914,100" shape="circle">
             </map>
         </div>
         <div class="portrait">
-            <img src="/resources/portrait.jpg" class="port-img" alt="background" usemap="#port-map">
+            <img src="/resources/portrait.jpg" width="1080" height="1920" class="port-img" alt="background" usemap="#port-map">
 
             <map name="port-map">
-
+                <area target="" alt="" title="" href="https://www.facebook.com/BAMBALAMdotLT/" coords="136,1497,100" shape="circle">
+                <area target="" alt="" title="" href="https://soundcloud.com/bambalamdotlt" coords="404,1500,100" shape="circle">
+                <area target="" alt="" title="" href="https://www.youtube.com/channel/UCaN1Fm77TpWEJ0GuCEz1yCw?view_as=subscriber" coords="674,1504,100" shape="circle">
+                <area target="" alt="" title="" href="mailto:laimonas.staniulionis@gmail.com" coords="941,1502,100" shape="circle">
             </map>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/scripts/jquery.rwdImageMaps.min.js"></script>
+        <script>
+                $(document).ready(function(e) {
+                    $('img[usemap]').rwdImageMaps();
+                });
+                </script>
     </body>
 </html>
