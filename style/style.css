@@ -1,7 +1,29 @@
 body {
-    background: url("/resources/1.jpg") no-repeat fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    background-color: black;
+}
+
+.landscape {
+    display: block;
+    max-width:1920px;
+    max-height:1080px;
+    width: auto;
+    height: auto;
+}
+
+.portrait {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .landscape {
+        display: none;
+    }
+
+    .portrait {
+        display: block;
+        max-width:1080px;
+        max-height:1920px;
+        width: auto;
+        height: auto;
+    }
 }
