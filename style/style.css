@@ -4,10 +4,8 @@ body {
 
 .landscape {
     display: block;
-    max-width:1920px;
-    max-height:1080px;
-    width: inherit;
-    height: inherit;
+    max-width:100%;
+    max-height:100%;
 }
 
 .portrait {
@@ -21,9 +19,7 @@ body {
 
     .portrait {
         display: block;
-        max-width:1080px;
-        max-height:1920px;
-        width: inherit;
-        height: inherit;
+        max-width:100%;
+        max-height:100%;
     }
 }
