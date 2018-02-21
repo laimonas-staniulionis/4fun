@@ -6,6 +6,17 @@
         <link rel="stylesheet" href="/style/style.css">
         <title>BAMBALAM.LT</title>
         <script src="http://mattstow.com/js/ios-orientationchange-fix.min.js"></script>
+        <script>
+            (function() {
+	if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		var msViewportStyle = document.createElement("style");
+		msViewportStyle.appendChild(
+			document.createTextNode("@-ms-viewport{width:auto!important}")
+		);
+		document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+	}
+})();
+        </script>
     </head>
     <body>
         <div class="landscape">
